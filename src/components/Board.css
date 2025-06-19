@@ -48,3 +48,29 @@
 .cell:active {
   transform: scale(0.98);
 }
+   .reset-button {
+     padding: 10px 20px;
+     background-color: #4CAF50;
+     color: white;
+     border: none;
+     border-radius: 4px;
+     font-size: 1rem;
+     cursor: pointer;
+     transition: background-color 0.3s;
+   }
+   
+   .reset-button:hover {
+     background-color:rgb(160, 69, 69);
+   }
+   .winning-cell {
+  background-color: #4caf50; /* لون الخلفية الفائزة */
+  color: white; /* لون النص الأبيض */
+  animation: pulse 1s infinite; /* رسوم متحركة للنبض */
+}
+
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
